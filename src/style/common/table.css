@@ -1,0 +1,247 @@
+/* 表格面板 */
+.table-panel {
+    border: 1px solid #e8e8e8;
+    border-radius: 0 !important;
+    height: 100%; /* 占满父容器 */
+    display: flex;
+    flex-direction: column;
+}
+
+.table-panel .card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* 表格按钮样式 */
+.table-panel .left-operations .ant-btn,
+.table-panel .right-operations .ant-btn {
+    height: 28px;
+    padding: 0 12px;
+    border-radius: 0 !important;
+}
+
+/* 表格头部样式 */
+.ant-table .ant-table-thead > tr > th {
+    height: 35px !important;
+    padding: 4px 8px !important;
+    font-size: 13px !important;
+    background-color: #fafafa !important;
+    line-height: 27px !important;
+}
+
+/* 表格内容样式 */
+.ant-table .ant-table-tbody > tr > td {
+    height: 35px !important;
+    padding: 4px 8px !important;
+    font-size: 13px !important;
+    line-height: 27px !important;
+}
+
+/* 表格内测量行样式 */
+.ant-table .ant-table-tbody > tr .ant-table-measure-row {
+    height: 0px !important;
+    vertical-align: middle !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+.ant-table .ant-table-tbody > tr.ant-table-measure-row td{
+    height: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    visibility: hidden !important;
+}
+
+/* 表格内按钮样式 */
+.ant-table .ant-table-tbody .ant-btn {
+    height: 24px !important;
+    padding: 0 8px !important;
+    font-size: 13px !important;
+    line-height: 22px !important;
+    border-radius: 0 !important;
+}
+
+/* 按钮间距 */
+.ant-table .ant-table-tbody .ant-space {
+    gap: 8px !important;
+}
+
+/* 表格内所有按钮通用样式 */
+.table-panel .ant-btn {
+    height: 28px !important;
+    padding: 0 12px !important;
+    font-size: 13px !important;
+    line-height: 26px !important;
+    border-radius: 0 !important;
+}
+
+.table-panel .ant-btn:not(.ant-btn-primary) {
+    color: #717171;
+}
+
+/* 表格卡片体内边距 */
+.table-panel .ant-card-body {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    flex: 1; /* 占据卡片剩余空间 */
+    display: flex;
+    flex-direction: column;
+    min-height: 0; /* 允许内容收缩 */
+}
+
+/* 表格面板卡片头部 */
+.table-panel .ant-card-head {
+    border-radius: 0 !important;
+    color: var(--text-primary);
+}
+
+/* 表格行hover状态 */
+.ant-table-tbody > tr:hover > td {
+    background-color: #f5f5f5 !important;
+}
+
+/* 让表格容器占满空间 */
+.table-panel .ant-table-wrapper {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 让表格本身占满容器，但预留分页空间 */
+.table-panel .ant-table-wrapper .ant-spin-nested-loading,
+.table-panel .ant-table-wrapper .ant-spin-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-panel .ant-table {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 让表格内容区域可滚动，但预留分页空间 */
+.table-panel .ant-table-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-panel .ant-table-body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto !important;
+}
+
+/* 分页器样式 */
+.table-panel .ant-table-pagination {
+    margin: 16px 8px !important;
+    flex-shrink: 0; /* 防止分页被压缩 */
+}
+
+/* 自定义表格滚动条样式 */
+.table-panel .ant-table-body::-webkit-scrollbar {
+    width: 6px;  /* 垂直滚动条宽度 */
+    height: 6px; /* 水平滚动条高度 */
+}
+
+.table-panel .ant-table-body::-webkit-scrollbar-thumb {
+    background: #ccc;  /* 滚动条滑块颜色 */
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.table-panel .ant-table-body::-webkit-scrollbar-thumb:hover {
+    background: #aaa;  /* 鼠标悬停时的颜色 */
+}
+
+.table-panel .ant-table-body::-webkit-scrollbar-track {
+    background: #f5f5f5;  /* 滚动条轨道颜色 */
+    border-radius: 3px;
+}
+
+/* 确保滚动条不会占用内容空间 */
+.table-panel .ant-table-body {
+    scrollbar-width: thin;  /* Firefox */
+    scrollbar-color: #ccc #f5f5f5;  /* Firefox */
+    -ms-overflow-style: -ms-autohiding-scrollbar;  /* IE/Edge */
+} 
+
+
+/* 表格全局样式 */
+
+.ant-table-wrapper .ant-table{
+    border-radius: 0 !important;
+    color: var(--text-primary) !important;
+    background: var(--table-bg) !important;
+}
+
+.ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container {
+    border-inline-start: 0 !important;
+    border-inline-end: 0 !important;
+}
+
+.ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-header >table{
+    border-bottom: 1px solid var(--table-border-color) !important;
+    border-top: 1px solid var(--table-border-color) !important;
+}
+.ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-header >table >thead>tr>th{
+    border-inline-start: 0px solid var(--table-thead-tr-th) !important;
+    border-inline-end: 1px solid var(--table-thead-tr-th) !important;
+
+}
+
+.ant-table-wrapper .ant-table-cell-scrollbar:not([rowspan]) {
+    border-bottom: 1px solid var(--table-cell-scrollbar) !important;
+    box-shadow: 0 1px 0 1px var(--table-cell-scrollbar-shadow) !important;
+}
+
+.ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-body >table >tbody>tr>td{
+    border-inline-start: 0px solid var(--table-border-color) !important;
+    border-inline-end: 1px solid var(--table-border-color) !important;
+}
+.ant-table-wrapper .ant-table.ant-table-bordered .ant-table-tbody >tr >td {
+    border-bottom: 1px solid var(--table-border-color) !important;
+}
+
+.ant-table-wrapper .ant-table-thead >tr>th{
+    color: var(--table-thead-color) !important;
+    background: var(--table-header-bg) !important;
+    border-bottom: 1px solid var(--table-border-color) !important;
+}
+.ant-table-wrapper .ant-table-column-sorter{
+    color: var(--table-thead-after-color) !important;
+}
+
+.ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-header >table{
+    border-bottom: 1px solid var(--table-border-color) !important;
+}
+
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-row:hover>td , .ant-table-wrapper .ant-table-tbody >tr> td.ant-table-cell-row-hover{
+    background: var(--table-cell-row-hover) !important;
+    color: var(--text-primary) !important;
+}
+
+.ant-table-wrapper td.ant-table-column-sort{
+    background: var(--table-column-sort) !important;
+    color: var(--text-primary) !important;
+}
+
+.ant-table-cell.ant-table-cell-fix-right.ant-table-cell-fix-right-first{
+    background: var(--table-cell-fix-right-first) !important;
+    color: var(--text-primary) !important;
+}
+
+.ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-header >table >thead>tr >.ant-table-cell-fix-right-first::after{
+    border-inline-end: 1px solid var(--table-border-color) !important;
+}
+
+.ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-body >table >tbody>tr>td >.ant-table-expanded-row-fixed::after{
+    border-inline-end: 0px;
+}
+

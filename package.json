@@ -1,0 +1,43 @@
+{
+  "name": "smart-auth-front",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:prod": "vite build --mode production",
+    "build:test": "vite build --mode test"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.0",
+    "@antv/x6": "^2.18.1",
+    "@tsparticles/vue3": "^3.0.1",
+    "@types/lodash-es": "^4.17.12",
+    "ant-design-vue": "^4.0.0",
+    "axios": "^1.4.0",
+    "echarts": "^5.6.0",
+    "lodash-es": "^4.17.21",
+    "monaco-editor": "^0.52.2",
+    "particles.vue3": "^2.12.0",
+    "pinia": "^2.1.6",
+    "pinia-plugin-persist": "^1.0.0",
+    "smart-auth-front": "file:",
+    "tsparticles": "^2.12.0",
+    "tsparticles-engine": "^2.12.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.5",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "@vue/tsconfig": "^0.4.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.9",
+    "vite-plugin-monaco-editor": "^1.1.0",
+    "vue-tsc": "^1.8.8"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}

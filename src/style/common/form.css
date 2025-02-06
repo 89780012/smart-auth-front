@@ -1,0 +1,201 @@
+/* 表单元素通用样式 */
+.ant-form-item {
+  margin-bottom: 8px !important;
+}
+
+/* 输入框基础样式 */
+.ant-input,
+.ant-select-selector,
+.ant-picker {
+  height: 28px !important;
+  padding: 0 8px !important;
+  font-size: 13px !important;
+  line-height: 26px !important;
+  border-radius: 0 !important;
+}
+
+/* 日期选择器样式----start  */
+.ant-picker {
+  background: var(--ant-picker-bg);
+  color: var(--ant-picker-color);
+  border: 1px solid var(--ant-picker-border-color) !important;
+}
+.ant-picker:hover{
+  border: 1px solid var(--input-border-color) !important;
+}
+/* 开始日期-结束日期 */
+.ant-picker .ant-picker-input >input::placeholder{
+  color: var(--ant-picker-placeholder-color) !important;
+}
+/* 清除按钮 */
+.ant-picker-clear{
+  color: var(--ant-picker-clear-color) !important;
+}
+.anticon-swap-right, .ant-picker-suffix{
+  color: var(--ant-picker-swap-right-color) !important;
+}
+.ant-picker .ant-picker-input > input {
+  color: var(--ant-picker-input-color) !important;
+}
+
+/* 日期选择器样式----end  */
+
+.ant-input-affix-wrapper{
+    height: 30px !important;
+    padding: 0 8px !important;
+    font-size: 13px !important;
+    line-height: 26px !important;
+    border-radius: 0 !important;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color) !important;
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover{
+  border: 1px solid var(--input-border-color) !important;
+}
+
+.ant-input-affix-wrapper >input.ant-input {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  pointer-events: auto; /* 确保input可以交互 */
+}
+
+.ant-input-affix-wrapper >input.ant-input:hover,
+.ant-input-affix-wrapper >input.ant-input:focus {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.ant-input-affix-wrapper >input.ant-input::placeholder {
+  color: var(--text-placeholder);
+}
+
+/* 表单控件容器样式 */
+.ant-form-item-control-input,
+.ant-form-item-control-input-content {
+  height: 28px !important;
+  line-height: 28px !important;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector{
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+.ant-select .ant-select-selection-placeholder{
+  color: var(--text-placeholder);
+}
+
+.ant-form-item .ant-form-item-label >label{
+  color: var(--text-primary);
+}
+
+.ant-input-search-button {
+  height: 28px !important;
+}
+
+/* Select选择器特殊处理 */
+.ant-select-selector .ant-select-selection-search-input {
+  height: 26px !important;
+  border: none !important; /* 去掉内部input的边框 */
+}
+
+.ant-select-selector .ant-select-selection-item {
+  line-height: 26px !important;
+}
+
+/* DatePicker特殊处理 */
+.ant-picker .ant-picker-input > input {
+  font-size: 13px !important;
+  border: none !important; /* 去掉内部input的边框 */
+}
+
+.ant-input:focus,
+.ant-select-focused .ant-select-selector,
+.ant-picker-focused {
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2) !important;
+}
+
+/* 筛选面板样式 */
+.filter-panel {
+  margin-bottom: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 0 !important;
+  flex-shrink: 0; /* 防止被压缩 */
+  background: var(--primary-color);
+}
+
+/* 筛选面板头部 */
+.filter-panel .ant-card-head {
+  height: 35px !important;
+  min-height: 35px !important;
+  padding: 0 12px;
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 0 !important;
+}
+
+.filter-panel .ant-card-head-title {
+  padding: 0;
+  font-size: 13px;
+  line-height: 35px !important;
+  color: var(--text-primary);
+}
+
+/* 筛选面板表单样式 */
+.filter-panel .ant-form-item {
+  margin-bottom: 8px !important;
+}
+
+/* 筛选面板输入框样式 */
+.filter-panel .ant-input,
+.filter-panel .ant-select-selector,
+.filter-panel .ant-picker {
+  height: 28px !important;
+  padding: 0 8px !important;
+  font-size: 13px !important;
+  line-height: 26px !important;
+}
+
+/* 筛选面板Select选择器特殊处理 */
+.filter-panel .ant-select-selector .ant-select-selection-search-input {
+  height: 26px !important;
+}
+
+.filter-panel .ant-select-selector .ant-select-selection-item {
+  line-height: 26px !important;
+}
+
+/* 筛选面板DatePicker特殊处理 */
+.filter-panel .ant-picker .ant-picker-input > input {
+  font-size: 13px !important;
+}
+
+/* 筛选面板按钮样式 */
+.filter-panel .ant-btn {
+  height: 28px !important;
+  padding: 0 12px !important;
+  font-size: 13px !important;
+  line-height: 26px !important;
+  border-radius: 0 !important;
+}
+
+.filter-panel .ant-btn:not(.ant-btn-primary) {
+  color: #717171;
+}
+
+/* 确保下拉框展开面板也没有圆角 */
+.ant-select-dropdown {
+  border-radius: 0 !important;
+}
+
+/* 日期选择器弹出面板去除圆角 */
+.ant-picker-dropdown {
+  border-radius: 0 !important;
+}
+
+/* 确保卡片内容区域也没有圆角 */
+.filter-panel .ant-card-body {
+  border-radius: 0 !important;
+} 
+

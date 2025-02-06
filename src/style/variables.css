@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #FFFFFF;
+  --bg-color: #f0f2f5;
+  --border-color: #E4E4E7;
+  --text-primary: rgba(0, 0, 0, 0.85);
+  --text-secondary: #000000;
+  --text-placeholder: #BFBFBF;
+
+  /* 菜单样式 */
+  --menu-bg-color: #FFFFFF;
+  --menu-text-color: #1F1F1F;
+  --menu-hover-bg-color: #F5F5F5;
+  --menu-active-bg-color: #E6F7FF;
+  --menu-active-text-color: #1677FF;
+
+  /* 标签页样式 */
+  --ant-tabs-tab-remove-color: rgba(0, 0, 0, 0.45);
+
+  /* 文本框默认值 */
+  --input-border-color: #4096ff;
+
+  /* 日期选择框样式 */
+  --ant-picker-border-color: #D9D9D9;
+  --ant-picker-bg: hsl(0, 0%, 100%);
+  --ant-picker-placeholder-color: #BFBFBF;
+  --ant-picker-clear-color: #CACACA;
+  --ant-picker-swap-right-color: #BFBFBF;
+  --ant-picker-input-color: #000000;
+
+  /* 表格样式 */
+  --table-header-bg: #FAFAFA;
+  --table-border-color: #f0f0f0;
+  --table-thead-bg: #fafafa;
+  --table-thead-color: rgba(0, 0, 0, 0.88);
+  --table-thead-after-color: rgba(0, 0, 0, 0.29);
+  --table-thead-tr-th: #F0F0F0;
+  --table-cell-row-hover: #f5f5f5;
+  --table-column-sort: #f5f5f5;
+  --table-cell-fix-right-first: #FAFAFA;
+  --table-cell-scrollbar: #E4E4E7;
+  --table-cell-scrollbar-shadow: #FAFAFA;
+  --table-expanded-row-fixed: #FFFFFF;
+  
+}
+
+[data-theme='dark'] {
+  --primary-color: #141414;
+  --bg-color: #141414;
+  --bg-secondary: #222222;
+  --border-color: #303030;
+  --text-primary: #FFFFFF;
+  --text-secondary: #DEDEDE;
+  --text-placeholder: #A5A5A5;
+
+  /* 菜单样式 */
+  --menu-bg-color: #1E1E1E;
+  --menu-text-color: #A5A5A5;
+  --menu-hover-bg-color: #3a3939;
+  --menu-active-bg-color: #3f3f3f;
+  --menu-active-text-color: #ffffff;
+
+   /* 标签页样式 */
+   --ant-tabs-tab-remove-color: #A5A5A5;
+
+     /* 文本框默认值 */
+   --input-border-color: #4096ff;
+
+   /* 日期选择框样式 */
+  --ant-picker-border-color: #303030;
+  --ant-picker-bg: #222222;
+  --ant-picker-placeholder-color: #A5A5A5;
+  --ant-picker-clear-color: #A5A5A5;
+  --ant-picker-swap-right-color: #A5A5A5;
+  --ant-picker-input-color: #FFFFFF;
+
+  /* 表格样式 */
+  --table-header-bg: #141414;
+  --table-border-color: #303030;
+  --table-thead-bg: #303030;
+  --table-thead-color: #FFFFFF;
+  --table-thead-after-color: #A5A5A5;
+  --table-thead-tr-th: #303030;
+  --table-cell-row-hover: #303030;
+  --table-column-sort: #1b1616;
+  --table-cell-fix-right-first: #141414;
+  --table-cell-scrollbar: #303030;
+  --table-cell-scrollbar-shadow: #141414;
+  --table-expanded-row-fixed: #141414;
+} 
