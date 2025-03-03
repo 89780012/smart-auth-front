@@ -47,6 +47,9 @@ export function getRoleList(data: RoleListParams) {
   return request({
     url: '/api/role/pageList',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -68,6 +71,9 @@ export const createRole = (data: RoleFormData): Promise<ApiResponse<null>> => {
   return request({
     url: '/api/role/addRole',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -79,6 +85,9 @@ export const updateRole = (data: RoleFormData): Promise<ApiResponse<null>> => {
   return request({
     url: '/api/role/updateRole',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -90,6 +99,9 @@ export const deleteRole = (roleId: number): Promise<ApiResponse<null>> => {
   return request({
     url: '/api/role/deleteRole',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: { roleId }
   })
 }
@@ -101,6 +113,9 @@ export const batchDeleteRoles = (roleIds: number[]): Promise<ApiResponse<null>> 
   return request({
     url: '/api/role/batchDeleteRole',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: { roleIds }
   })
 }
@@ -138,6 +153,9 @@ export const exportRoles = (params: Partial<RoleListParams>): Promise<ApiRespons
   return request({
     url: '/api/role/exportRole',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: params
   })
 }
@@ -149,6 +167,9 @@ export const bindUserRole = (data: { userId: number; roleIds: number[] }): Promi
   return request({
     url: '/api/role/bindUserRole',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -160,6 +181,9 @@ export const getUserRole = (userId: number): Promise<ApiResponse<{ roleIds: numb
   return request({
     url: `/api/role/getUserRole`,
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: { userId }
   })
 } 
@@ -171,6 +195,9 @@ export const getRoleUser = (roleId: number): Promise<ApiResponse<{ userIds: numb
   return request({
     url: `/api/role/getRoleUser`,
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: { roleId }
   })
 }
@@ -182,6 +209,9 @@ export const bindRoleUser = (data: { roleId: number; userIds: number[] }): Promi
   return request({
     url: '/api/role/bindRoleUser',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -193,6 +223,9 @@ export const getRolePermissions = (roleId: number): Promise<ApiResponse<{ permis
   return request({
     url: `/api/role/getRolePermissions`,
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: { roleId }
   })
 }
@@ -204,6 +237,9 @@ export const bindRolePermission = (data: { roleId: number; permissionIds: number
   return request({
     url: '/api/role/bindRolePermission',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }

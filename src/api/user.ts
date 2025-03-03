@@ -62,6 +62,9 @@ export const login = (data: LoginParams): Promise<ApiResponse<{ user:User }>> =>
   return request({
     url: '/api/user/loginUser',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -72,7 +75,10 @@ export const login = (data: LoginParams): Promise<ApiResponse<{ user:User }>> =>
 export const logout = (): Promise<ApiResponse<void>> => {
   return request({
     url: '/api/user/logout',
-    method: 'post'
+    method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
   })
 }
 
@@ -84,6 +90,9 @@ export function getUserList(data: UserListParams) {
   return request({
     url: '/api/user/pageList',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -104,6 +113,9 @@ export const createUser = (data: UserFormData): Promise<ApiResponse<null>> => {
   return request({
     url: '/api/user/addUser',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -115,6 +127,9 @@ export const updateUser = (data: UserFormData): Promise<ApiResponse<null>> => {
   return request({
     url: `/api/user/updateUser`,
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -126,6 +141,9 @@ export const deleteUser = (userId: number): Promise<ApiResponse<null>> => {
   return request({
     url: `/api/user/deleteUser`,
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: { userId }
   })
 }
@@ -137,6 +155,9 @@ export const batchDeleteUsers = (userIds: number[]): Promise<ApiResponse<null>> 
   return request({
     url: '/api/user/batchDeleteUser',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: { userIds }
   })
 }
@@ -180,6 +201,9 @@ export const exportUsers = (data: Partial<UserListParams>): Promise<ApiResponse<
   return request({
     url: '/api/user/exportUser',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -201,6 +225,9 @@ export const getUserMenu = (data: {userId:number}):Promise<ApiResponse<any>> => 
   return request({
     url: '/api/user/getUserMenu',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }

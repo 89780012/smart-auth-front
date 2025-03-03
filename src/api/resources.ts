@@ -36,6 +36,9 @@ export function getPageResourceList(params: ResourceQuery) {
   return request({
     url: '/api/resources/pageList',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: params
   })
 }
@@ -54,6 +57,9 @@ export function addResource(data: Partial<Resource>) {
   return request({
     url: '/api/resources/addResource',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -63,6 +69,9 @@ export function updateResource(data: Partial<Resource>) {
   return request({
     url: '/api/resources/updateResource',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -72,6 +81,9 @@ export function deleteResource(data: { resourceId: number }) {
   return request({
     url: `/api/resources/deleteResource`,
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -81,6 +93,9 @@ export function batchDeleteResources(data: { resourceIds: number[] }) {
   return request({
     url: '/api/resources/batchDeleteResources',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data 
   })
 }
@@ -89,7 +104,10 @@ export function batchDeleteResources(data: { resourceIds: number[] }) {
 export function getResourceTemplateUrl() {
   return request({
     url: '/api/resources/getResourceTemplate',
-    method: 'get'
+    method: 'get',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
   })
 }
 

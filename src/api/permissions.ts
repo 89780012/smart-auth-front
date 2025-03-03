@@ -48,6 +48,9 @@ export function getPermissionList(data: PermissionListParams) {
   return request({
     url: '/api/permission/pageList',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -69,6 +72,9 @@ export const createPermission = (data: PermissionFormData): Promise<ApiResponse<
   return request({
     url: '/api/permission/addPermission',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -80,6 +86,9 @@ export const updatePermission = (data: PermissionFormData): Promise<ApiResponse<
   return request({
     url: '/api/permission/updatePermission',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data
   })
 }
@@ -91,6 +100,9 @@ export const deletePermission = (permissionId: number): Promise<ApiResponse<null
   return request({
     url: '/api/permission/deletePermission',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: { permissionId }
   })
 }
@@ -102,6 +114,9 @@ export const batchDeletePermissions = (permissionIds: number[]): Promise<ApiResp
   return request({
     url: '/api/permission/batchDeletePermission',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: { permissionIds }
   })
 }
@@ -139,6 +154,9 @@ export const exportPermissions = (params: Partial<PermissionListParams>): Promis
   return request({
     url: '/api/permission/exportPermission',
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: params
   })
 }
@@ -148,6 +166,9 @@ export function getPermissionResource(permissionId: number) {
   return request({
     url: `/api/permissions/resources`,
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: {
       permissionId: permissionId
     }
@@ -162,6 +183,9 @@ export function bindPermissionResource(data: {
   return request({
     url: `/api/permissions/bindPermissionResource`,
     method: 'post',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: {
       permissionId: data.permissionId,
       resourceIds: data.resourceIds
